@@ -9,6 +9,10 @@ class LicenseAPIView(APIView):
         data = request.data
         license_key = data.get('license_key')
         hw_id = data.get('hw_id')
+        try:
+            hw_id = int(hw_id)
+        except ValueError:
+            pass
         license_obj = LicenseKeyModel.objects.filter(license_key=license_key).first()
         if license_obj is None:
             return Response(status=400)
