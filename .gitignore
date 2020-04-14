@@ -1,3 +1,5 @@
 licen_env
 .idea
 migrations
+db.sqlite3
+__pycache__
