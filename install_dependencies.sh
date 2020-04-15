@@ -11,6 +11,7 @@ PROJECT_NAME="license_key_mgmt"
 PROJECT_PATH=`pwd`/$PROJECT_NAME
 RUNSERVER_PATH=$PROJECT_PATH/runserver.sh
 sed -i "s|RUNSERVER_PATH|$RUNSERVER_PATH|g" backend.conf
+sed -i "s|DIR_PATH|$PROJECT_PATH|g" default
 sed -i "s|DIR_PATH|$PROJECT_PATH|g" runserver.sh
 sed -i "s|NAME_OF_PROJECT|$PROJECT_NAME|g" runserver.sh
 

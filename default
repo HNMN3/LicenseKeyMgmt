@@ -1,6 +1,11 @@
 server {
         listen 80 default_server;
+        root DIR_PATH;
         server_name _;
+
+        location /static {
+                try_files $uri $uri/ =404;
+        }
 
         location / {
                 proxy_pass http://127.0.0.1:8000;

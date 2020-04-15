@@ -1,5 +1,5 @@
 #!/bin/bash
-PROJECT_DIR=/home/hnmn3/workspace/license_key_mgmt/license_key_mgmt
-PROJECT_NAME=license_key_mgmt
+PROJECT_DIR=DIR_PATH
+PROJECT_NAME=NAME_OF_PROJECT
 cd $PROJECT_DIR || exit
 gunicorn $PROJECT_NAME.wsgi

@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import url
 from license import views
-
+from django.conf.urls.static import static
+from . import settings
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^license/', views.LicenseAPIView.as_view())
