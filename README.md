@@ -1,3 +1,3 @@
-#License Key Management
-Step1: setup your server by running script named install_dependencies.sh
+# License Key Management
+A Django based project for generating and verifying the license key for any software.
 
